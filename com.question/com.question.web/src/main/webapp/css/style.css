@@ -1,0 +1,17 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.centered {
+	margin: 0px auto;
+}
+.colored {
+	background-color: #eee;
+}
+
+.listing-question {
+	margin:10px 20px 10px 10px; 
+}

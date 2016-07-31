@@ -1,0 +1,31 @@
+<div class="col-md-12" ng-controller="QuestionDetailsController as qdc">
+
+	<div class="col-md-12">
+
+		<h4>{{qdc.selectedQuestion.header|uppercase}}</h4>
+		<p class="small">{{qdc.selectedQuestion.content}}</p>
+		<mark>Point: {{qdc.selectedQuestion.questionPoint}}</mark>
+
+	</div>
+
+	<div class="col-md-12">
+		<p class="lead">Answers</p>
+		<ul class="list-group listing-question"
+			data-ng-repeat="answer in qdc.answers">
+
+			<li class="list-group-item">{{answer.content}}</li>
+		</ul>
+
+	</div>
+
+	<div class="col-md-12">
+		<form role="form">
+			<div class="form-group">
+				<label> Reply</label>
+				<textarea class="form-control" name="content" rows="10" cols="" ng-model="qdc.answer.content"></textarea>
+			</div>
+			<button class="btn btn-success pull-right" type="submit" value="submit" ng-click="qdc.reply()">Submit</button>
+		</form>
+	</div>
+</div>
+
